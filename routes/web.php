@@ -3,7 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController;
-
+use App\Http\Controllers\TipoController;
+use App\Http\Controllers\CotizacionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,4 +31,6 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
- route::resource('clientes',ClienteController::class);
+route::resource('clientes',ClienteController::class);
+route::resource('tipos',TipoController::class);
+route::resource('cotizaciones',CotizacionController::class);

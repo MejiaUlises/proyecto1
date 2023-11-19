@@ -52,15 +52,25 @@ class ClienteController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $cliente = Cliente::find($id);
+        return view('clientes.edit', compact('cliente'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'nombre' => 'required|string',
+            'direccion' => 'required|string',
+            'telefono' => 'required|string',
+        ]);
+
+        $cliente = Cliente::find($id);
+        $cliente->update($request->all());
+
+        return redirect()->route('clientes.index')->with('success', 'Cliente actualizado correctamente.');
     }
 
     /**
