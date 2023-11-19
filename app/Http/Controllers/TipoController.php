@@ -8,7 +8,6 @@ use App\Models\Tipo;
 class TipoController extends Controller
 {
     /**
-     * Muestra una lista de los tipos.
      *
      * @return \Illuminate\Http\Response
      */
@@ -19,7 +18,6 @@ class TipoController extends Controller
     }
 
     /**
-     * Muestra el formulario para crear un nuevo tipo.
      *
      * @return \Illuminate\Http\Response
      */
@@ -29,7 +27,6 @@ class TipoController extends Controller
     }
 
     /**
-     * Almacena un nuevo tipo en la base de datos.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -46,7 +43,6 @@ class TipoController extends Controller
     }
 
     /**
-     * Muestra la información de un tipo específico.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -58,7 +54,6 @@ class TipoController extends Controller
     }
 
     /**
-     * Muestra el formulario para editar un tipo específico.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -70,7 +65,6 @@ class TipoController extends Controller
     }
 
     /**
-     * Actualiza un tipo específico en la base de datos.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -89,7 +83,6 @@ class TipoController extends Controller
     }
 
     /**
-     * Elimina un tipo específico de la base de datos.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

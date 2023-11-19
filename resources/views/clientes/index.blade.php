@@ -5,6 +5,7 @@
         <h2>Listado de Clientes</h2>
 
         <a href="{{ route('clientes.create') }}" class="btn btn-primary">Nuevo Cliente</a>
+        <a href="{{ route('dashboard') }}" class="btn btn-primary">inicio</a>
 
         @if(session('success'))
             <div class="alert alert-success mt-3">

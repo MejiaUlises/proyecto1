@@ -10,7 +10,6 @@ use App\Models\Tipo;
 class CotizacionController extends Controller
 {
     /**
-     * Muestra una lista de las cotizaciones.
      *
      * @return \Illuminate\Http\Response
      */
@@ -21,7 +20,6 @@ class CotizacionController extends Controller
     }
 
     /**
-     * Muestra el formulario para crear una nueva cotización.
      *
      * @return \Illuminate\Http\Response
      */
@@ -33,7 +31,6 @@ class CotizacionController extends Controller
     }
 
     /**
-     * Almacena una nueva cotización en la base de datos.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
@@ -56,7 +53,6 @@ class CotizacionController extends Controller
     }
 
     /**
-     * Muestra la información de una cotización específica.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -68,7 +64,6 @@ class CotizacionController extends Controller
     }
 
     /**
-     * Muestra el formulario para editar una cotización específica.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -82,7 +77,6 @@ class CotizacionController extends Controller
     }
 
     /**
-     * Actualiza una cotización específica en la base de datos.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
@@ -107,7 +101,6 @@ class CotizacionController extends Controller
     }
 
     /**
-     * Elimina una cotización específica de la base de datos.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

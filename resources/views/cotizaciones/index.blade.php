@@ -5,6 +5,7 @@
         <h2>Listado de Cotizaciones</h2>
 
         <a href="{{ route('cotizaciones.create') }}" class="btn btn-primary">Nueva Cotización</a>
+        <a href="{{ route('dashboard') }}" class="btn btn-primary">inicio</a>
 
         @if(session('success'))
             <div class="alert alert-success mt-3">

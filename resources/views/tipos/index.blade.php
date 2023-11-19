@@ -5,6 +5,7 @@
         <h2>Listado de Tipos</h2>
 
         <a href="{{ route('tipos.create') }}" class="btn btn-primary">Nuevo Tipo</a>
+        <a href="{{ route('dashboard') }}" class="btn btn-primary">inicio</a>
 
         @if(session('success'))
             <div class="alert alert-success mt-3">
