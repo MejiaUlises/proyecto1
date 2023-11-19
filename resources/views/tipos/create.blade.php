@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h2>Nuevo Cliente</h2>
+        <h2>Nuevo Tipo</h2>
 
         @if ($errors->any())
             <div class="alert alert-danger">
@@ -14,21 +14,13 @@
             </div>
         @endif
 
-        <form action="{{ route('clientes.store') }}" method="POST">
+        <form action="{{ route('tipos.store') }}" method="POST">
             @csrf
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" class="form-control" required>
             </div>
-            <div class="form-group">
-                <label for="direccion">Dirección:</label>
-                <input type="text" name="direccion" class="form-control" required>
-            </div>
-            <div class="form-group">
-                <label for="telefono">Teléfono:</label>
-                <input type="text" name="telefono" class="form-control" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Guardar Cliente</button>
+            <button type="submit" class="btn btn-primary">Guardar Tipo</button>
         </form>
     </div>
 @endsection
